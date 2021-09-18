@@ -1,0 +1,58 @@
+<layout>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:backgroundTint="@color/red">
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fragment_one_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            />
+
+                        <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fragment_two_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             />
+
+                        <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fragment_three_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             />
+
+                        <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/fragmentFocus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+
+                </LinearLayout>
+
+
+        </ScrollView>
+</FrameLayout>
+</layout>
